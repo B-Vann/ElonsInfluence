@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Created by Brandon as part of my portfolio
+	
+-->
+<html>
+	<head>
+		<title>Elon's Influence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+		<script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		
+	</head>
+	
+	<body class="is-preload">
+
+
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+			 <header> Elon's Influence </header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-chart-line"><span>Line Chart</span></a>
+						<a href="#work" class="icon solid fa-chart-pie"><span>Pie Chart</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+
+						<canvas id="forecast"></canvas>
+						<div class="Button1" >
+<button id="button0" type="button" >BTC</button>
+<button id="button1" type="button" >ETH</button>
+<button id="button2" type="button" >DOGE</button>
+</div>
+
+
+
+								<div class ="tweet">
+								<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								</div>					
+							</article>
+
+
+		
+
+						<!-- Work -->
+							<article id="work" class="panel">
+							<h1> Elon's Crypto Tweets </h1>
+							<canvas id="myChart" width="400" height="400"></canvas>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['BTC Tweets', 'ETH Tweets', 'DOGE Tweets'],
+        datasets: [{
+            label: '# of Tweets',
+            data: [9, 1, 21],
+            backgroundColor: [
+                'rgba(194, 137, 51, 0.8)',
+                'rgba(86, 104, 153, 0.8)',
+                'rgba(165, 125, 55, 0.8)',
+				
+            ],
+            borderColor: [
+                'rgba(194, 137, 51, 1)',
+                'rgba(86, 104, 153, 1)',
+                'rgba(165, 125, 55, 1)',
+
+            ],
+            borderWidth: 0.33
+        }]
+    },
+    options: { 
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+ 
+								<header>
+
+								</header>
+
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Part of Brandons Portfoliio 2021</li>
+						</ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+
+			
+
+			
+
+	</body>
+</html>
